@@ -1,3 +1,65 @@
-body{
-    background-color: aqua;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'my-roboto';
+    src: url(/assets/Roboto-Regular.ttf);
+}
+
+
+.Dashboard {
+    font-family: 'my-roboto';
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    grid-row: 1 / span 2;
+}
+
+.sidebar-grid-container {
+    padding-top: 16px;
+    display: grid;
+    justify-items: center;
+    gap: 48px;
+}
+
+.item {
+    padding:0 8px;
+    width: 160px;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
+    gap: 4px;
+}
+
+.icon {
+    width: 20px;
+}
+
+.icon > img {
+    width: 100%;
+}
+
+/* for Dashboard logo */
+.item.logo {
+    font-size: 28px;
+    width: 200px;
+}
+
+.logo > .icon {
+    width: 40px;
+}
+
+.navigations {
+    display: grid;
+    gap: 16px;
+}
+/* for just testing  */
+.Dashboard > * {
+    border: 1px solid #000;
 }
