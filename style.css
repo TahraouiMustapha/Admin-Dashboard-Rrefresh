@@ -150,6 +150,24 @@
     align-self: flex-end;
 } 
 
+.buttons {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.buttons > button {
+    padding: 12px 32px;
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+
 
 
 /* for just testing  */
@@ -157,6 +175,3 @@
     border: 1px solid #000;
 }
 
-.header > * {
-    border: 1px solid #000;
-}
